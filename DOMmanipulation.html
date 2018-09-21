@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <ul>
+    </ul>
+    <button onclick="aloha()">Say Aloha</button>
+    <script>
+      function aloha(){
+        var ul = document.getElementsByTagName('ul')[0];
+        var newli = document.createElement('li');
+        var newText = document.createTextNode("Aloha")
+        newli.appendChild(newText);
+        ul.appendChild(newli);
+        document.body.appendChild(ul);
+        
+      }
+
+  </script>
+  </body>
+</html>
